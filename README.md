@@ -1,6 +1,6 @@
 # ABN and ACN validation for PHP
 
-By Paul Ferret
+By [Paul Ferrett](http://www.paulferrett.com)
 
 ## Installation
 
