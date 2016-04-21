@@ -11,6 +11,7 @@
             "email": "adam@bigfish.tv"
         }
     ],
+    "license": "MIT",
     "require": {},
     "autoload": {
     	"psr-0": { "AbnValidator": "src/" }
