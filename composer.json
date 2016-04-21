@@ -1,0 +1,18 @@
+{
+    "name": "ifunk/abn-validator",
+    "description": "ABN and ACN validation for PHP",
+    "authors": [
+    	{
+    		"name": "Paul Ferrett",
+    		"url": "http://www.paulferrett.com"
+    	},
+        {
+            "name": "Adam Royle",
+            "email": "adam@bigfish.tv"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-0": { "AbnValidator": "src/" }
+    }
+}
