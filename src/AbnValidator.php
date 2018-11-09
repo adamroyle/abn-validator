@@ -12,7 +12,7 @@ class AbnValidator {
    * @return bool True if $number is a valid ABN
    */
   public static function isValidAbnOrAcn($number) {
-    $number = preg_replace('/\s/', '', $number);
+    $number = preg_replace('/[^0-9]/', '', $number);
     if(strlen($number) == 9) {
       return self::isValidAcn($number);
     }
@@ -33,7 +33,7 @@ class AbnValidator {
     $weights = array(10, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19);
 
     // Strip non-numbers from the acn
-    $abn = preg_replace('/\s/', '', $abn);
+    $abn = preg_replace('/[^0-9]/', '', $abn);
 
     // Check abn is 11 chars long
     if(strlen($abn) != 11) {
@@ -67,7 +67,7 @@ class AbnValidator {
     $weights = array(8, 7, 6, 5, 4, 3, 2, 1, 0);
 
     // Strip non-numbers from the acn
-    $acn = preg_replace('/\s/', '', $acn);
+    $acn = preg_replace('/[^0-9]/', '', $acn);
 
     // Check acn is 9 chars long
     if(strlen($acn) != 9) {
